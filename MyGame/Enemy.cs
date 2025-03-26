@@ -34,10 +34,13 @@ namespace MyGame
                 health -= damageStillToInflict;
                 if (health < 0) health = 0;
             }
-
-
-
-
         }
+
+        public void GetHealth()
+        {
+
+            return;
+        }
+
     }
 }
