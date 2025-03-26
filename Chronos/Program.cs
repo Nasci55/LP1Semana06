@@ -25,7 +25,7 @@ namespace Chronos
             string elpasedTimeCrono1 = String.Format("{0.00}.{1.04}", ts1.Seconds, ts1.Milliseconds);
             string elpasedTimeCrono2 = String.Format("{0.00}.{1.04}", ts2.Seconds, ts2.Milliseconds);
 
-            System.Console.WriteLine(elpasedTimeCrono1, elpasedTimeCrono2);
+            System.Console.WriteLine($"{elpasedTimeCrono1}, {elpasedTimeCrono2} ");
 
 
         }
