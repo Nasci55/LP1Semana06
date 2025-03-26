@@ -42,5 +42,10 @@ namespace MyGame
             return;
         }
 
+        public void GetShield()
+        {
+
+            return;
+        }
     }
 }
