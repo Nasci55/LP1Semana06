@@ -47,5 +47,14 @@ namespace MyGame
 
             return;
         }
+
+        public string SetName(string[] args)
+        {
+            string name = args[0];
+            name.Count();
+
+
+            return "A";
+        }
     }
 }
