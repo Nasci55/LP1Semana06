@@ -51,7 +51,7 @@ namespace MyGame
             return name;
         }
 
-        private void PickupPowerUp(PowerUp powerUp, float num)
+        internal void PickupPowerUp(PowerUp powerUp, float num)
         {
             if (powerUp == PowerUp.health)
             {
@@ -70,5 +70,6 @@ namespace MyGame
 
 
         }
+
     }
 }
