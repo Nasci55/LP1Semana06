@@ -57,12 +57,16 @@ namespace MyGame
             {
                 health += num;
                 if (health > 100)
-                {
                     health = 100;
-                }
+
             }
+            else if (powerUp == PowerUp.shield)
+            {
+                shield += 100;
+                if (shield > 100)
+                    shield = 100;
 
-
+            }
 
 
         }
