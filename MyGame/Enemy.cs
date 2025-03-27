@@ -14,11 +14,16 @@ namespace MyGame
         private float shield;
 
 
-        public Enemy(string name)
+        internal Enemy(string name)
         {
             this.name = SetName(name);
             health = 100;
             shield = 0;
+        }
+
+        internal static Enemy(int powerUpsGotten)
+        {
+            powerUpsGotten = 0;
         }
 
         public string GetName() => name;
@@ -70,6 +75,13 @@ namespace MyGame
             }
 
 
+        }
+
+        internal static int GetPowerUpsGotten(int GetPowerUpsGotten)
+        {
+
+
+            return GetPowerUpsGotten;
         }
 
     }
