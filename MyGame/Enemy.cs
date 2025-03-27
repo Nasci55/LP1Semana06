@@ -48,13 +48,23 @@ namespace MyGame
             return;
         }
 
-        public string SetName(string[] args)
+        public string SetName(string playerName)
         {
-            string name = args[0];
-            name.Count();
+            string name = playerName;
+            int stringLenght = name.Length;
 
 
-            return "A";
+            if (stringLenght > 8)
+            {
+                name = name.Substring(0, 8);
+                System.Console.WriteLine(name);
+            }
+            else
+            {
+                System.Console.WriteLine(name);
+
+            }
+            return name;
         }
     }
 }
