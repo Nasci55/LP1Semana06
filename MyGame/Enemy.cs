@@ -21,7 +21,7 @@ namespace MyGame
             shield = 0;
         }
 
-        internal static Enemy(int powerUpsGotten)
+        static Enemy()
         {
             powerUpsGotten = 0;
         }
@@ -74,15 +74,10 @@ namespace MyGame
 
             }
 
-
+            powerUpsGotten += 1;
         }
 
-        internal static int GetPowerUpsGotten(int GetPowerUpsGotten)
-        {
-
-
-            return GetPowerUpsGotten;
-        }
+        internal static int GetPowerUpsGotten() => powerUpsGotten;
 
     }
 }
