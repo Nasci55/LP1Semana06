@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace MyGame
@@ -48,6 +49,22 @@ namespace MyGame
                 name = name.Substring(0, 8);
             }
             return name;
+        }
+
+        private void PickupPowerUp(PowerUp powerUp, float num)
+        {
+            if (powerUp == PowerUp.health)
+            {
+                health += num;
+                if (health > 100)
+                {
+                    health = 100;
+                }
+            }
+
+
+
+
         }
     }
 }
