@@ -19,10 +19,7 @@ namespace MyGame
             shield = 0;
         }
 
-        public string GetName()
-        {
-            return name;
-        }
+        public string GetName() => name;
 
         public void TakeDamage(float damage)
         {
@@ -36,17 +33,9 @@ namespace MyGame
             }
         }
 
-        public void GetHealth()
-        {
+        public float GetHealth() => health;
 
-            return;
-        }
-
-        public void GetShield()
-        {
-
-            return;
-        }
+        public float GetShield() => shield;
 
         public string SetName(string playerName)
         {
@@ -57,12 +46,6 @@ namespace MyGame
             if (stringLenght > 8)
             {
                 name = name.Substring(0, 8);
-                System.Console.WriteLine(name);
-            }
-            else
-            {
-                System.Console.WriteLine(name);
-
             }
             return name;
         }
