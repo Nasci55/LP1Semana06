@@ -8,6 +8,7 @@ namespace MyGame
 {
     public class Enemy
     {
+        private static int powerUpsGotten;
         private string name;
         private float health;
         private float shield;
