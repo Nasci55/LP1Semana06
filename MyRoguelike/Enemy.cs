@@ -48,13 +48,6 @@ namespace MyRoguelike
         public string SetName(string playerName)
         {
             string name = playerName;
-            int stringLenght = name.Length;
-
-
-            if (stringLenght > 8)
-            {
-                name = name.Substring(0, 8);
-            }
             return name;
         }
 

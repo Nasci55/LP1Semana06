@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using Humanizer;
 
 namespace MyRoguelike
 {
@@ -17,7 +18,8 @@ namespace MyRoguelike
         public Level(int howManyRooms, Toughness diff)
         {
             numOfRooms = new Enemy[howManyRooms];
-            Toughness difficulty = diff;
+            difficulty = Convert.ToString(diff);
+
 
             totalRooms = howManyRooms;
         }
@@ -39,10 +41,11 @@ namespace MyRoguelike
 
         public void PrintEnemies()
         {
-            foreach (Enemy enemy in numOfRooms)
-            {
-                System.Console.WriteLine($"{numOfRooms}, {numOfRooms}");
 
+            for (int i = 0; i < numOfRooms.Length; i++)
+            {
+                if (numOfRooms[i] != null)
+                    System.Console.WriteLine($"{i.ToWords(new CultureInfo("us"))} room: {numOfRooms[i].GetName()}");
             }
 
 
