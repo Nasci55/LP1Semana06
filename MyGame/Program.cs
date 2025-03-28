@@ -21,7 +21,7 @@ namespace MyGame
             {
                 newEnemy.TakeDamage(15);
                 newEnemy.PickupPowerUp(PowerUp.health, 5);
-                newEnemy.PickupPowerUp(PowerUp.shield, 500);
+                newEnemy.PickupPowerUp(PowerUp.shield, 7);
                 Console.WriteLine($"{newEnemy.GetName()} {newEnemy.GetHealth()} {newEnemy.GetShield()}");
 
             }
