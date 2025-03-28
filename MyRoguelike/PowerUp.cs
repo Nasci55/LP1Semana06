@@ -1,6 +1,6 @@
 namespace MyGame
 {
-    public enum PowerUp
+    public enum MyRoguelike
     {
         health,
         shield,
