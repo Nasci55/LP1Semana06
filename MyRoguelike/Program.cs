@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 
-namespace MyGame
+namespace MyRoguelike
 {
     public class Program
     {
